@@ -1,0 +1,81 @@
+@mixin brandBlue($op) {
+  color: rgba(42, 187, 182, $op);
+}
+@mixin brandBlueBackground($op) {
+  background: rgba(42, 187, 182, $op);
+}
+@mixin overlayBlack($op) {
+  background: rgba(0, 0, 0, $op);
+}
+@mixin overlayWhite($op) {
+  background: rgba(255, 255, 255, $op);
+}
+@mixin flex($hor, $ver, $wrap) {
+  display: flex;
+  justify-content: $hor;
+  align-items: $ver;
+  flex-wrap: $wrap;
+}
+@mixin centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin rounded($size) {
+  border-radius: $size + 'px';
+}
+
+@mixin absoluteElement {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@mixin pointerCursor {
+  cursor: pointer;
+}
+
+$facebook: #3b5998;
+$instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+.pointer {
+  @include pointerCursor();
+  transition: all 0.3s ease-in-out;
+}
+.shadow-none {
+  box-shadow: none;
+}
+
+@mixin disableEffects {
+  /*CSS transitions*/
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out !important;
+}

@@ -1,0 +1,30 @@
+@import '../../App.scss';
+.me {
+  margin: 20px auto;
+  min-width: 300px;
+  max-width: 700px;
+  @include centeredFlex();
+}
+
+.borderLeft {
+  border-left: 1px solid lightgray;
+}
+.borderBottom {
+  border-bottom: 1px solid rgb(42, 187, 182);
+}
+.smallDesc {
+  display: block;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.doctorCard {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .doctorCard {
+    width: 100%;
+  }
+}

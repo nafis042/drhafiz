@@ -1,0 +1,102 @@
+@import '../../App.scss';
+
+@mixin navStyle {
+  @include brandBlueBackground(0.4);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  @include centeredFlex;
+}
+@keyframes slide {
+  from {
+    transform: scale(1.4) translateX(100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes caption {
+  from {
+    transform: scale(0.8) translateX(10%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+// carousel start
+.carouselParent {
+  background: white !important;
+  height: calc(100vh - 120px);
+  padding: 0;
+  width: 100vw !important;
+  .carousel {
+    height: 100%;
+    .carousel-inner {
+      height: 100%;
+
+      .carousel-item.active {
+        // transition: all 5s ease;
+        animation: slide 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation-fill-mode: forwards;
+        .carouselCaption {
+          animation: caption 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+          animation-fill-mode: both;
+        }
+        .carouselAltText {
+          animation: caption 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 1.5s;
+          animation-fill-mode: both;
+        }
+      }
+      .carousel-item {
+        height: 100%;
+        visibility: hidden;
+        .view {
+          height: 100%;
+          img {
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .carousel-control-next div {
+    @include navStyle;
+  }
+  .carousel-control-prev div {
+    @include navStyle;
+  }
+}
+// carousel end
+@media only screen and (max-width: 880px) {
+  .carousel {
+    .carousel-inner {
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel {
+    .carousel-inner {
+      .carousel-item.active {
+        visibility: visible;
+        animation: none !important;
+        .carouselCaption {
+          animation: none !important;
+        }
+        .carouselAltText {
+          animation: none !important;
+        }
+      }
+    }
+  }
+}

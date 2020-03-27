@@ -1,0 +1,28 @@
+@import './fonts.scss';
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 16px;
+  overflow-x: hidden !important;
+  font-family: Roboto !important;
+  font-display: auto !important;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: lightgray;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: darkgray;
+    &:active {
+      width: 15px;
+      background: rgba(42, 187, 182, 0.5);
+    }
+  }
+}

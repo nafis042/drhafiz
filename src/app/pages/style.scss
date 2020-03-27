@@ -1,0 +1,35 @@
+main {
+  overflow: hidden;
+  // margin: 0 !important;
+  margin-top: 182px;
+  padding: 15px 1px;
+  display: flex !important;
+  justify-content: center !important;
+}
+.homepageCarousel {
+  padding: 0 !important;
+  // border: 1px solid red;
+  width: 100vw !important;
+  border-width: 0px !important;
+}
+@media only screen and (max-width: 767px) {
+  .homepageCarousel {
+    margin-top: 128px;
+    width: 100vw !important;
+    
+  }
+}
+
+// contact form on succes  message
+.succesParent {
+  width: 100%;
+  height: auto;
+  left: 0;
+  z-index: 10000000 !important;
+  bottom: 10%;
+  position: fixed;
+  .succesMessage {
+    width: auto;
+    border: 4px solid white;
+  }
+}

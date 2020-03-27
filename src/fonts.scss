@@ -1,0 +1,28 @@
+// glob
+@font-face {
+  font-family: Roboto;
+  font-display: auto;
+  src: url(./assets/fonts/RobotoSlab-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/RobotoSlab-Light.ttf);
+  font-display: auto;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: auto;
+  src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: auto;
+  src: url(./assets/fonts/RobotoSlab-Bold.ttf);
+  font-weight: 700;
+}
+#glob {
+  font-family: Roboto !important;
+}

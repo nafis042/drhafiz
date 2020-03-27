@@ -1,0 +1,14 @@
+// footer start
+footer {
+  padding: 0;
+  width: 100%;
+  .socialColumn {
+    ul li + li {
+      margin-left: 1rem;
+    }
+  }
+  .footer-copyright {
+    background: #22968b !important;
+  }
+}
+// footer end
