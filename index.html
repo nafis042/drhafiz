@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="shortcut icon" href="/drhafiz/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/drhafiz/manifest.json"><style id="fullStyle">#full{display:flex;justify-content:center;align-items:center;width:100vw;height:100vh;overflow-x:hidden;overflow-y:hidden}</style><link href="/drhafiz/static/css/2.4dcd3423.chunk.css" rel="stylesheet"><link href="/drhafiz/static/css/main.ffb9223b.chunk.css" rel="stylesheet"><style type="text/css" data-glamor=""></style><style type="text/css">.bc-icons.breadcrumb-item::before,
+.bc-icons.breadcrumb-item::after {
+  content: none;
+}
+
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::before,
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::after{
+  content: none;
+}
+
+.bc-icons.breadcrumb-item.active {
+  color: #eeeeee;
+}
+</style><style type="text/css">.Ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+}
+
+.Ripple-outline {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Ripple.is-reppling {
+  animation: ripple 0.5s linear;
+}
+
+.Ripple-parent {
+  position: relative;
+  overflow: hidden;
+  touch-action: none;
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+</style><style type="text/css">.btn-group-vertical>.btn,
+.btn-group-vertical>.btn+.btn-group,
+.btn-group-vertical>.btn-group+.btn,
+.btn-group-vertical>.btn-group+.btn-group {
+  margin-left: 0px;
+}
+
+.btn-group-lg>.btn {
+  font-size: 0.9rem;
+  padding: 1rem 2.4rem;
+}
+
+.btn-group-sm>.btn {
+  font-size: 0.6rem;
+  padding: 0.5rem 1.6rem;
+}
+
+.btn-floating.btn.btn-sm,
+.btn-floating.btn.btn-lg {
+  padding: 0;
+}
+</style><style type="text/css">.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-fade .carousel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0ms ease-in-out, opacity 0.8s ease-out;
+}
+
+.carousel-fade .carousel-item.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.carousel-multi-item .carousel-item {
+  display: inline-block !important;
+}
+
+.carousel .carousel-slide-item {
+  transition: left 0.5s;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-item-prev, .carousel-item-next {
+  z-index: 2;
+}
+</style><style type="text/css">.table-wrapper-scroll-y {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+</style><style type="text/css">.dropup .dropdown-menu {
+  top: auto !important;
+  bottom: 100% !important;
+  transform: translate3d(5px, 5px, 0px) !important;
+}
+
+.dropdown-menu-right {
+  left: 0 !important;
+  right: auto !important;
+}
+</style><style type="text/css">.hamburger-button__checkbox {
+  display: none;
+}
+
+.hamburger-button__button {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  top: -5px;
+}
+
+label.hamburger-button__button {
+  margin-bottom: 0;
+}
+
+#nav-icon1 {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: #fff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 5px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 16px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 27px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(1) {
+  top: 16px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(3) {
+  top: 16px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+</style><style type="text/css">.popover-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+
+.popover-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: scale 300ms ease-out, opacity 300ms ease;
+}
+
+.popover-enter-done {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popover-exit {
+  opacity: 1;
+  transform: scale(0.8);
+  transition: all 300ms ease-out;
+}
+
+.popover-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 300ms ease-out;
+}
+
+/* slide from side */
+
+.side-slide-enter {
+  opacity: 0.2;
+  transform: translateX(-100%);
+}
+
+.side-slide-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: transform 300ms ease-out, opacity 300ms ease;
+}
+
+.side-slide-enter-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.side-slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-out;
+}
+
+.side-slide-exit-active {
+  opacity: 0.2;
+  transform: translateX(-100%);
+  transition: all 300ms ease-out;
+}
+
+.right-side-slide-enter {
+  opacity: 0.2;
+  transform: translateX(100%);
+}
+
+.right-side-slide-enter-active {
+  opacity: 1;
+  transform: translateX(0%) !important;
+  transition: transform 300ms ease-out, opacity 300ms ease;
+}
+
+.right-side-slide-enter-done {
+  opacity: 1;
+  transform: translateX(0%) !important;
+}
+
+.right-side-slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-out;
+}
+
+.right-side-slide-exit-active {
+  opacity: 0.2;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}
+</style></head><body><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="full"><img src="ripple.svg"></div><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="w-100  d-flex flex-column justify-content-around align-items-center" style="height:100vh;background:lightgray"><h1 class="font-weight-bold display-1 text-center wow zoomIn delay-0.5s faster">Page not found</h1><img src="/drhafiz/static/media/404.30fa9872.svg" width="20%" class="wow  pulse delay-1s infinite" alt=""><a class="black-text lead wow shake delay-2s" href="/"><u>Go to main page</u></a></div></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/drhafiz/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/drhafiz/static/js/2.e8db1dfd.chunk.js"></script><script src="/drhafiz/static/js/main.da909fc1.chunk.js"></script></body></html>
